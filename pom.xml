@@ -6,7 +6,7 @@
     <groupId>cn.mydolphin</groupId>
     <artifactId>mydolphin-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>mydolphin-parent</name>
     <description>mydolphin project for Spring Boot</description>
@@ -17,6 +17,10 @@
         <version>2.1.0.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <modules>
+        <module>mydolphin-common</module>
+        <module>mydolphin-gateway</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
