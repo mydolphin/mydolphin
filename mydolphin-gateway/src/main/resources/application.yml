@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: mydolphin-gateway
+  dubbo:
+    server: true
+    registry: N/A
