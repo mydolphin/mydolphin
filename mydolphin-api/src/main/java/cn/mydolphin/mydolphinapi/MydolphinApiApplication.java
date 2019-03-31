@@ -1,12 +1,13 @@
-package cn.mydolphin.mydolphinparent;
+package cn.mydolphin.mydolphinapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MydolphinParentApplication {
+public class MydolphinApiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MydolphinParentApplication.class, args);
+        SpringApplication.run(MydolphinApiApplication.class, args);
     }
+
 }

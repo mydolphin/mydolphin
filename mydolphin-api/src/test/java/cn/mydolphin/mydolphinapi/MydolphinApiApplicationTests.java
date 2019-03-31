@@ -1,4 +1,4 @@
-package cn.mydolphin.mydolphinparent;
+package cn.mydolphin.mydolphinapi;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class MydolphinParentApplicationTests {
+public class MydolphinApiApplicationTests {
 
     @Test
     public void contextLoads() {
