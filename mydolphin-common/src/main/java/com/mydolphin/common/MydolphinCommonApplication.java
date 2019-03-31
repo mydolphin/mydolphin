@@ -9,4 +9,6 @@ public class MydolphinCommonApplication {
     public static void main(String[] args) {
         SpringApplication.run(MydolphinCommonApplication.class, args);
     }
+
+
 }
