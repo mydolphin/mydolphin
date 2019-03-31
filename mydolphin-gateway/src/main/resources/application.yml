@@ -3,4 +3,4 @@ spring:
     name: mydolphin-gateway
   dubbo:
     server: true
-    registry: N/A
+    registry: zookeeper://www.lingchuanzhou.cn:2181
