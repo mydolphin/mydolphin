@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AuthController {
 
     @Reference(interfaceClass = UserServiceApi.class)
-    UserServiceApi userServiceApi;
+    private UserServiceApi userServiceApi;
 
 
     @RequestMapping(value = "${jwt.auth-url}")

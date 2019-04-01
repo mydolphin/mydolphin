@@ -6,9 +6,9 @@ package com.mydolphin.common.domain;
  * @create 2018-06-04-17:50
  **/
 public class ResResult<T> {
-    public static final String SUCCESS = "ok";
-    public static final String FAIL = "fail";
-    public static final String ERROR = "error";
+    static final String SUCCESS = "ok";
+    static final String FAIL = "fail";
+    static final String ERROR = "error";
     private String code;
     private T data;
     private String msg;
