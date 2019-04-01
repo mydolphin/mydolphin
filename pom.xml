@@ -21,6 +21,7 @@
         <module>mydolphin-common</module>
         <module>mydolphin-gateway</module>
         <module>mydolphin-user</module>
+        <module>mydolphin-api</module>
     </modules>
 
     <properties>

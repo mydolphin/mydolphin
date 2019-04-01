@@ -1,11 +1,9 @@
 spring:
   application:
-    name: mydolphin-gateway
+    name: mydolphin-user
   dubbo:
     server: true
     registry: zookeeper://www.lingchuanzhou.cn:2181
-
-
-
-jwt:
-  no-auth-url: /user,/product
+    protocol:
+      name: dubbo
+      port: 20881
