@@ -2,7 +2,7 @@ package cn.mydolphin.mydolphinapi.api;
 
 public interface UserServiceApi {
 
-    boolean login(String userName, String passWd);
+    int login(String userName, String passWd);
 
     boolean register(UserVo userVo);
 
