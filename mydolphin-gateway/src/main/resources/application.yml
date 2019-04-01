@@ -8,4 +8,4 @@ spring:
 
 
 jwt:
-  no-auth-url: /user,/product
+  auth-ignore-url: /user,/product
