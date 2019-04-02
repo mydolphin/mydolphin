@@ -1,8 +1,10 @@
 package cn.mydolphin.gateway.filter;
 
 import cn.mydolphin.gateway.auth.config.JwtConfig;
+import cn.mydolphin.gateway.common.CurUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import javax.annotation.Resource;
@@ -29,6 +31,14 @@ public class AuthFilter extends OncePerRequestFilter {
                 filterChain.doFilter(httpServletRequest,httpServletResponse);
                 return;
             }
+        }
+
+        //
+        String userId  = "";
+        if(StringUtils.isEmpty(userId)){
+            return;
+        }else {
+            CurUser.setCurUserId(userId);
         }
     }
 }
