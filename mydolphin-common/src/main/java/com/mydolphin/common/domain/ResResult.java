@@ -26,6 +26,13 @@ public class ResResult<T> {
         return resResult;
     }
 
+    public static<T> ResResult success(String msg){
+        ResResult resResult = new ResResult();
+        resResult.setCode(SUCCESS);
+        resResult.setMsg(msg);
+        return resResult;
+    }
+
     public static<T> ResResult fail(String msg) {
         ResResult resResult = new ResResult();
         resResult.setMsg(msg);

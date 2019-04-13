@@ -2,6 +2,7 @@ package cn.mydolphin.mydolphinapi.api;
 
 
 public class UserInfoVo {
+    private Integer userId;
     private String userName;
     private String nickName;
     private String email;
@@ -100,5 +101,13 @@ public class UserInfoVo {
 
     public void setUpdateTime(long updateTime) {
         this.updateTime = updateTime;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 }
