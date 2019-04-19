@@ -18,7 +18,7 @@ public class UserController {
     @Reference(interfaceClass = UserServiceApi.class)
     private UserServiceApi userServiceApi;
 
-    @RequestMapping(name = "/register", method = RequestMethod.POST)
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
     public ResResult register(UserVo userVo) {
         if(StringUtils.isEmpty(userVo.getUserName())) {
             return ResResult.fail("用户名不能为空!");
@@ -34,7 +34,7 @@ public class UserController {
         }
     }
 
-    @RequestMapping(name = "/validate", method = RequestMethod.POST)
+    @RequestMapping(value = "/validate", method = RequestMethod.POST)
     public ResResult validate(String userName) {
         if(StringUtils.isEmpty(userName)) {
             return ResResult.fail("用户名不能为空!");
@@ -47,12 +47,12 @@ public class UserController {
         }
     }
 
-    @RequestMapping(name = "/logout", method = RequestMethod.GET)
+    @RequestMapping(value = "/logout", method = RequestMethod.GET)
     public ResResult logout() {
         return null;
     }
 
-    @RequestMapping(name = "/getUserInfo", method = RequestMethod.GET)
+    @RequestMapping(value = "/getUserInfo", method = RequestMethod.GET)
     public ResResult getUserInfo() {
         //获取登录用户
         String userId = CurUser.getCurUser();
@@ -70,7 +70,7 @@ public class UserController {
         }
     }
 
-    @RequestMapping(name = "/updUserInfo", method = RequestMethod.POST)
+    @RequestMapping(value = "/updUserInfo", method = RequestMethod.POST)
     public ResResult updUserInfo(UserInfoVo userInfoVo) {
         //获取登录用户
         String userId = CurUser.getCurUser();
